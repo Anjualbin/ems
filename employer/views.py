@@ -14,7 +14,7 @@ from django.utils.decorators import method_decorator
 # class Adminhome(TemplateView):
 #     template_name = "employer/basetemplate.html"
 
-@method_decorator(signinrequired,name="dispatch")
+# @method_decorator(signinrequired,name="dispatch")
 class AddEmployee(SuccessMessageMixin,CreateView):
     model=MyUser
     form_class = AddEmployeeForm
