@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+{%extends 'employer/basetemplate.html'%}
+{%block body_block%}
+<div class="container">
+    <div class="row m-5">
+        <div class="col-4 "><a href="{%url 'listemployee'%}"class="text-decoration-none">Back</a></div>
+        <div class="col-4">
+            <img src="{{employee.image.url}}" class="card-img-top" alt="..." >
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
+{%endblock%}

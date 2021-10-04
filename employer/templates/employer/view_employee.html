@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{%extends 'employer/basetemplate.html'%}
+{%block body_block%}
+<div class="container">
+    <div class="row m-5">
+        <div class="col-4"><a href="{%url 'listemployee'%}"class="text-decoration-none">Back</a></div>
+        <div class="col-4">
+            <div class="card m-3" style="width: 18rem;">
+                <a href="{%url 'image' employee.id%}"><img src="{{employee.image.url}}" class="card-img-top" alt="..."
+                                                      height="200"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Name: {{employee.first_name}}</h5>
+                    <!--                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the-->
+                    <!--                        card's content.</p>-->
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Last Name : {{employee.last_name}}</li>
+                    <li class="list-group-item">Email : {{employee.email}}</li>
+                    <li class="list-group-item">Role : {{employee.role}}</li>
+<!--                    <li class="list-group-item">A third item</li>-->
+                </ul>
+                <div class="card-body">
+                    <a href="{%url 'editemployee' employee.id%}" class="card-link btn btn-success pe-4 ps-4">Edit</a>
+                    <a href="{%url 'delemployee' employee.id%}" class="card-link btn btn-success pe-4 ps-4">delete</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
+{%endblock%}
