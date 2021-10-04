@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-zygie+jm19a+%!202^y3yz^oi4t4^e+sglmvk2mg=vj7uf#q6v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://emsprojectbya.herokuapp.com/', 'localhost', '127.0.0.1' ]
+ALLOWED_HOSTS = []
 
 
 # Application definition
